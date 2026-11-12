@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="60%" stop-color="#023528"/>
+      <stop offset="100%" stop-color="#022C22"/>
+    </linearGradient>
+
+    <!-- Emerald Dune Gradient -->
+    <linearGradient id="duneEmerald" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064E3B"/>
+    </linearGradient>
+
+    <!-- Golden Dune Gradient -->
+    <linearGradient id="duneGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Rounded Container -->
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Outer Ring -->
+  <circle cx="256" cy="216" r="130" fill="none" stroke="#FCD34D" stroke-opacity="0.25" stroke-width="3" filter="url(#glow)"/>
+  <circle cx="256" cy="216" r="105" fill="none" stroke="#FCD34D" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Directional Labels N E S W -->
+  <text x="256" y="72" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#FFFBEB" text-anchor="middle">N</text>
+  <text x="408" y="223" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#FFFBEB" text-anchor="middle">E</text>
+  <text x="256" y="372" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#FFFBEB" text-anchor="middle">S</text>
+  <text x="104" y="223" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="#FFFBEB" text-anchor="middle">W</text>
+
+  <!-- Main Compass Rose Blades -->
+  <g filter="url(#glow)">
+    <!-- North Blade -->
+    <polygon points="256,216 256,96 274,216" fill="#FFFBEB"/>
+    <polygon points="256,216 256,96 238,216" fill="#F59E0B"/>
+
+    <!-- South Blade -->
+    <polygon points="256,216 256,336 238,216" fill="#FFFBEB"/>
+    <polygon points="256,216 256,336 274,216" fill="#D97706"/>
+
+    <!-- East Blade -->
+    <polygon points="256,216 376,216 256,198" fill="#FFFBEB"/>
+    <polygon points="256,216 376,216 256,234" fill="#F59E0B"/>
+
+    <!-- West Blade -->
+    <polygon points="256,216 136,216 256,234" fill="#FFFBEB"/>
+    <polygon points="256,216 136,216 256,198" fill="#D97706"/>
+
+    <!-- Corner Diagonal Blades -->
+    <!-- NE -->
+    <polygon points="256,216 332,140 256,198" fill="#FCD34D"/>
+    <polygon points="256,216 332,140 274,216" fill="#B45309"/>
+    <!-- NW -->
+    <polygon points="256,216 180,140 238,216" fill="#FCD34D"/>
+    <polygon points="256,216 180,140 256,198" fill="#B45309"/>
+    <!-- SE -->
+    <polygon points="256,216 332,292 274,216" fill="#FCD34D"/>
+    <polygon points="256,216 332,292 256,234" fill="#B45309"/>
+    <!-- SW -->
+    <polygon points="256,216 180,292 256,234" fill="#FCD34D"/>
+    <polygon points="256,216 180,292 238,216" fill="#B45309"/>
+
+    <!-- Center Diamond Core -->
+    <polygon points="256,202 270,216 256,230 242,216" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Background Emerald Dunes -->
+  <path d="M 0,380 Q 140,330 270,370 T 512,350 L 512,512 L 0,512 Z" fill="url(#duneEmerald)"/>
+
+  <!-- Foreground Golden Desert Dunes -->
+  <path d="M 0,420 Q 180,360 360,430 T 512,410 L 512,512 L 0,512 Z" fill="url(#duneGold)"/>
+
+  <!-- Dune Crest Highlight Curve -->
+  <path d="M 0,420 Q 180,360 360,430 T 512,410" fill="none" stroke="#FDE68A" stroke-width="4"/>
+</svg>

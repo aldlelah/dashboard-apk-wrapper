@@ -1,0 +1,12 @@
+Layer,Name,Hex_Color,Role,Android_Resource
+1,Background Top,#064E3B,Deep Emerald Sky Gradient Start,ic_launcher_background.xml
+1,Background Mid,#023528,Deep Emerald Sky Gradient Mid,ic_launcher_background.xml
+1,Background Bottom,#022C22,Deep Emerald Sky Gradient End,ic_launcher_background.xml
+2,Compass Star Light Blade,#FFFBEB,Golden Star Highlight,ic_launcher_foreground.xml
+2,Compass Star Main Blade,#F59E0B,Primary Amber Gold,ic_launcher_foreground.xml
+2,Compass Star Shadow Blade,#D97706,Deep Gold Shadow,ic_launcher_foreground.xml
+2,Compass Diagonal Blade Light,#FCD34D,Secondary Gold Accent,ic_launcher_foreground.xml
+2,Compass Diagonal Blade Dark,#B45309,Deep Amber Base,ic_launcher_foreground.xml
+3,Emerald Dune Layer,#047857,Rolling Mid-ground Sand Dunes,ic_launcher_foreground.xml
+3,Golden Dune Layer,#F59E0B,Foreground Sand Dunes Gradient,ic_launcher_foreground.xml
+3,Dune Crest Highlight,#FDE68A,Dune Edge Light Curve,ic_launcher_foreground.xml
